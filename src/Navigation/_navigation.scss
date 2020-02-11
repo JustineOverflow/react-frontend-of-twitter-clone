@@ -1,15 +1,8 @@
-.logos {
-  border-bottom: 1px solid $color-grey-medium;
-
-}
-
 .navigation {
 
   display: grid;
-  grid-row-gap: 20px;
-  padding-left: 30px;
-  font-size: 17px;
-  font-weight: 500;
+  padding-left: 10px;
+  padding-right: 20px;
   align-items: center;
 
   @media only screen and (max-width: $bp-medium) {
@@ -24,73 +17,30 @@
     margin-left: 50px;
     align-items: baseline;
 
-    &:hover {
-      cursor: pointer;
-    }
-
     @media only screen and (max-width: $bp-largest) {
       font-size: 0;
     }
 
-
-    &_item:hover::after {
-      content: "";
+    &:hover {
       cursor: pointer;
     }
 
     &-logo {
       margin: 1rem;
-      font-size: 3.5rem;
+      font-size: 3rem;
       color: $color-primary;
       align-items: center;
+
+      @media only screen and (max-width: $bp-largest) {
+        font-size: 13px;
+      }
     }
 
     &-categories {
       grid-template-rows: minmax(20px, min-content);
       justify-content: center;
+      font-size: 15px;
     }
-  }
-
-  &_item::before {
-    //content: "";
-    display: grid;
-    position: absolute;
-    top: 0;
-    left: 0;
-    height: 100%;
-    width: 3px;
-    background-color: grey;
-    transform: scaleY(0);
-    transition: transform .5s,
-    width .4s cubic-bezier(1, 0, 0, 1) .5s,
-    background-color .1s;
-  }
-}
-
-.around {
-
-  &-nav {
-
-    @media only screen and (max-width: $bp-small) {
-      font-size: 0;
-      &:hover {
-        border-radius: 100px;
-        max-width: 30px;
-        width: inherit;
-      }
-    }
-  }
-
-  &-logo {
-    display: grid;
-
-    &:hover {
-      background-color: blue;
-      cursor: pointer;
-      border-radius: 110px;
-      background-size: 100vh;
-    }
-
   }
 }
 

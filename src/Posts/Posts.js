@@ -56,22 +56,19 @@ class Posts extends Component {
                 <input className="home_cta-question" placeholder="What's happening?" type="text" id="text"
                        value={this.state.text} onChange={this.onInputChange}/>
                 <button className="button-small" onClick={this.postTweet}>
-                    <p className="button-small-text">New post</p>
+                    <p className="button-small-text">Tweet</p>
                 </button>
             </div>
 
             <section className="tweets">
 
-                <div className="tweets_tweet">
-                    <div className="tweets_tweet-profile">
+                <div>
+                    {/*<div className="tweets_tweet-profile">*/}
                         {
                             this.state.tweets.map((tweet) =>
-                                <p>{tweet.text}</p>)
+                                <p className="tweets_tweet">{tweet.text}</p>)
                         }
                     </div>
-
-                </div>
-
             </section>
         </section>
     }
