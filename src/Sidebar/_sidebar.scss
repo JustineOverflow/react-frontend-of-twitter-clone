@@ -1,0 +1,137 @@
+
+.sidebar {
+  border: solid 1px $color-grey-medium;
+
+}
+
+.search {
+
+  align-self: center;
+  position: relative;
+
+
+  &_button {
+    background-color: $color-grey-medium;
+    fill: $color-grey-dark;
+    border: none;
+    height: 3rem;
+    width: 3rem;
+    position: absolute;
+    margin-left: 2.5rem;
+    margin-top: 1.2rem;
+    margin-bottom: 1rem;
+    align-items: center;
+  }
+
+  &_icon {
+    //position: relative;
+   width: 2.5rem;
+  }
+
+  &_input {
+    font-size: 1.5rem;
+    color: $color-grey-dark;
+    padding-bottom: 1.5rem;
+    padding-top: 1.5rem;
+    text-align: center;
+
+    border-radius: 100px;
+    width: 95%;
+    background-color: $color-grey-medium;
+    border: none;
+
+    z-index: 10;
+  }
+}
+
+
+.trends {
+
+  display: grid;
+  margin-top: 30px;
+  background-color: $color-grey-light;
+  border-radius: 5%;
+  border-bottom: solid 1px $color-grey-medium;
+
+  &_heading {
+
+    display: grid;
+    grid-template-columns: 85% 15%;
+    font-size: 1.9rem;
+
+    border-bottom: solid 1px $color-grey-medium;
+    padding-bottom: 20px;
+    padding-top: 20px;
+    padding-left: 20px;
+
+
+    &-icon {
+      width: 2.5rem;
+      height: 2.5rem;
+      fill: $color-blue;
+      cursor: pointer;
+
+    }
+  }
+
+  &_proposition {
+
+    display: grid;
+    grid-template-rows: repeat(3, auto);
+    //grid-template-columns: 85% 15%;
+    border-bottom: solid 1px $color-grey-medium;
+    padding-top: 20px;
+    padding-left: 20px;
+    padding-bottom: 10px;
+    position: relative;
+
+    cursor: pointer;
+
+    &:hover {
+      background-color: $color-grey-medium;
+    }
+
+
+    &-item {
+
+      display: grid;
+      row-gap: 10px;
+
+      &-country {
+
+        display: grid;
+        //grid-template-columns: 85% 15%;
+        font-size: 1.3rem;
+        color: $color-grey-dark;
+        font-weight: 500;
+      }
+
+      &-account {
+        font-size: 1.8rem;
+      }
+
+      &-number {
+        font-size: 1.8rem;
+        color: $color-grey-dark;
+        font-weight: 500;
+      }
+    }
+
+    &-icon{
+      display: grid;
+      fill: $color-grey-dark;
+      width: 2.5rem;
+      height: 2.5rem;
+      position: absolute;
+      right: 35px;
+      top: 20px;
+      cursor: pointer;
+    }
+
+  }
+
+}
+
+
+
+

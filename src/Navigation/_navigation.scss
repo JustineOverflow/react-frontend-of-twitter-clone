@@ -1,0 +1,125 @@
+.logos {
+  border-bottom: 1px solid $color-grey-medium;
+
+}
+
+.navigation {
+
+  display: grid;
+  grid-row-gap: 20px;
+  padding-left: 30px;
+  font-size: 17px;
+  font-weight: 500;
+  align-items: center;
+
+  @media only screen and (max-width: $bp-medium) {
+    padding-left: 0;
+  }
+
+  &_item {
+
+    grid-template-columns: repeat(2, minmax(50px, min-content));
+    display: grid;
+    margin-top: 20px;
+    margin-left: 50px;
+    align-items: baseline;
+
+    &:hover {
+      cursor: pointer;
+    }
+
+    @media only screen and (max-width: $bp-largest) {
+      font-size: 0;
+    }
+
+
+    &_item:hover::after {
+      content: "";
+      cursor: pointer;
+    }
+
+    &-logo {
+      margin: 1rem;
+      font-size: 3.5rem;
+      color: $color-primary;
+      align-items: center;
+    }
+
+    &-categories {
+      grid-template-rows: minmax(20px, min-content);
+      justify-content: center;
+    }
+  }
+
+  &_item::before {
+    //content: "";
+    display: grid;
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 3px;
+    background-color: grey;
+    transform: scaleY(0);
+    transition: transform .5s,
+    width .4s cubic-bezier(1, 0, 0, 1) .5s,
+    background-color .1s;
+  }
+}
+
+.around {
+
+  &-nav {
+
+    @media only screen and (max-width: $bp-small) {
+      font-size: 0;
+      &:hover {
+        border-radius: 100px;
+        max-width: 30px;
+        width: inherit;
+      }
+    }
+  }
+
+  &-logo {
+    display: grid;
+
+    &:hover {
+      background-color: blue;
+      cursor: pointer;
+      border-radius: 110px;
+      background-size: 100vh;
+    }
+
+  }
+}
+
+.button {
+  border: none;
+  margin-top: 60px;
+  margin-left: 30px;
+  width: 80%;
+  height: 7%;
+  background-color: $color-primary;
+  border-radius: 10rem;
+  box-shadow: 0 15px 30px rgba(0, 0, 0, .2);
+  align-content: center;
+  justify-content: center;
+
+  text-align: center;
+
+  &-text {
+    color: white;
+    font-size: 1.7rem;
+    font-weight: 500;
+
+    &:hover {
+      color: black;
+    }
+  }
+
+  @media only screen and (max-width: $bp-largest) {
+    font-size: 0;
+  }
+}
+
