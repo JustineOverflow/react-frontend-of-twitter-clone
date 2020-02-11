@@ -1,4 +1,4 @@
-#For personal learning purpose:
+##For personal learning purpose:
 
 - Reproducing an equivalent of the Twitter UI;
 - Developing a system of writing and publishing "tweets";
