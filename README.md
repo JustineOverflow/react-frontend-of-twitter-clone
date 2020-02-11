@@ -14,4 +14,10 @@
 - CSS GRID
 - NPM
 
-The design is fully inspired by Twitter webapp. 
+
+## Important
+The design is fully inspired by Twitter webapp.
+This project is only for learning purposes and should be treated as such. Twitter is a registered trademark of Twitter Inc.
+
+
+ 

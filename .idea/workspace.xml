@@ -100,8 +100,8 @@
         <entry file="file://$PROJECT_DIR$/README.md">
           <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
             <state split_layout="SPLIT">
-              <first_editor relative-caret-position="240">
-                <caret line="16" column="21" lean-forward="true" selection-start-line="16" selection-start-column="21" selection-end-line="16" selection-end-column="21" />
+              <first_editor>
+                <caret selection-end-line="16" selection-end-column="48" />
               </first_editor>
               <second_editor />
             </state>
@@ -137,8 +137,8 @@
         <option value="$PROJECT_DIR$/src/database/posts.js" />
         <option value="$PROJECT_DIR$/src/App.js" />
         <option value="$PROJECT_DIR$/src/Posts/Posts.js" />
-        <option value="$PROJECT_DIR$/README.md" />
         <option value="$PROJECT_DIR$/.gitignore" />
+        <option value="$PROJECT_DIR$/README.md" />
       </list>
     </option>
   </component>
@@ -282,16 +282,15 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1581328682391</updated>
-      <workItem from="1581328683814" duration="18980000" />
+      <workItem from="1581328683814" duration="19254000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="18980000" />
+    <option name="totallyTimeSpent" value="19254000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1440" height="900" extended-state="6" />
-    <editor active="true" />
     <layout>
       <window_info id="npm" side_tool="true" />
       <window_info id="Favorites" side_tool="true" />
@@ -494,8 +493,8 @@
     <entry file="file://$PROJECT_DIR$/README.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="SPLIT">
-          <first_editor relative-caret-position="240">
-            <caret line="16" column="21" lean-forward="true" selection-start-line="16" selection-start-column="21" selection-end-line="16" selection-end-column="21" />
+          <first_editor>
+            <caret selection-end-line="16" selection-end-column="48" />
           </first_editor>
           <second_editor />
         </state>
